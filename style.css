@@ -135,11 +135,11 @@ button:hover {
     align-items: center;
 }
 
-.rates-section.title {
+.rates-section .title {
     margin-bottom: 20px;
 }
 
-.rates-section.text {
+.rates-section .text {
     margin-bottom: 40px;
 }
 
@@ -196,7 +196,7 @@ th, td {
     color: #FFFFFF;
 }
 
-.table-footer th {
+.table-footer td {
     padding: 30px 0;
 }
 
@@ -211,11 +211,11 @@ th, td {
     justify-content: space-between;
 }
 
-.create-account-section.title {
+.create-account-section .title {
     margin-bottom: 50px;
 }
 
-.create-account-section.text {
+.create-account-section .text {
     margin-bottom: 40px;
     max-width: 500px;
 }
@@ -286,7 +286,7 @@ textarea {
     resize: none;
 }
 
-form.button {
+form .button {
     width: 100%;
 }
 
