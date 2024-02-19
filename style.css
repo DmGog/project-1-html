@@ -1,12 +1,22 @@
 /*сброс стилей по умолчанию*/
 * {
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
+}
+
+/*общие стили */
+html, body {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
 }
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 ul {
@@ -16,11 +26,12 @@ ul {
 button {
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-/*стили страницы*/
-html, body {
-    font-family: 'Rubik', sans-serif;
+button:hover {
+    transform: translateY(-5px);
 }
 
 .title {
@@ -44,7 +55,6 @@ html, body {
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid red;
 }
 
 /*стили для header*/
@@ -60,6 +70,11 @@ html, body {
     align-items: center;
 }
 
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
 .menu-link {
     color: rgb(255, 255, 255);
     font-size: 12px;
@@ -69,21 +84,7 @@ html, body {
     text-transform: uppercase;
 }
 
-.menu {
-    display: flex;
-    gap: 24px;
-}
-
 /*стили для первой секции*/
-
-.main-title {
-    color: #363940;
-    font-size: 58px;
-    font-weight: 500;
-    line-height: 68px;
-    margin-bottom: 30px;
-}
-
 .main-wrapper {
     display: flex;
     justify-content: space-between;
@@ -91,8 +92,12 @@ html, body {
     height: 800px;
 }
 
-.main-image {
-    align-self: flex-end;
+.main-title {
+    color: #363940;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 68px;
+    margin-bottom: 30px;
 }
 
 .main.text {
@@ -111,6 +116,10 @@ html, body {
     line-height: 19.6px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
+}
+
+.main-image {
+    align-self: flex-end;
 }
 
 /*стили для второй секции*/
@@ -251,20 +260,24 @@ input[type = "email"], input[type = "password"], input[type = "date"], select {
     flex-grow: 1;
 }
 
+input[type="radio"], input [type="checkbox"], input[type="date"], select {
+    cursor: pointer;
+}
+
 .stack, fieldset {
     display: flex;
     column-gap: 30px;
-}
-
-fieldset {
-    width: 100%;
-    padding: 30px 15px;
 }
 
 .fields-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+fieldset {
+    width: 100%;
+    padding: 30px 15px;
 }
 
 textarea {
@@ -288,13 +301,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /*стили для подвала*/
 
-footer {
+.footer {
     background-color: #0A61F7;
     text-align: center;
     padding: 20px 0;
 }
 
-.small {
+small {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
