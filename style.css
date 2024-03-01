@@ -1,7 +1,7 @@
 /*сброс стилей по умолчанию*/
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -80,7 +80,7 @@ button:hover {
     font-size: 12px;
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: 1.4px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -89,7 +89,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 800px;
+    min-height: 800px;
 }
 
 .main-title {
@@ -113,8 +113,8 @@ button:hover {
     font-size: 14px;
     color: #FFFFFF;
     font-weight: 500;
-    line-height: 19.6px;
-    letter-spacing: 1.4px;
+    line-height: 19px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -185,8 +185,8 @@ th, td {
     border: 1px solid #0A61F7;
     font-size: 12px;
     font-weight: 500;
-    line-height: 19.6px;
-    letter-spacing: 1.4px;
+    line-height: 19px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: #0A61F7;
 }
@@ -245,7 +245,7 @@ input, select, fieldset, textarea, label, legend, input::placeholder, select::pl
     color: #95A1BB;
     font-size: 16px;
     font-weight: 400;
-    line-height: 22.4px;
+    line-height: 22px;
     font-family: inherit;
 }
 
@@ -312,4 +312,46 @@ small {
     font-weight: 400;
     line-height: 22px;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 1400px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .main-info {
+        align-self: flex-start;
+        margin: 100px 0 80px;
+    }
+
+    .main-image {
+        align-self: center;
+    }
+
+    .text {
+        margin-bottom: 40px;
+    }
+
+    .table {
+        width: 940px;
+    }
+
+    .table-wrapper {
+        overflow: auto;
+        width: 100%;
+        max-width: 940px;
+    }
+
+    .account-wrapper {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .create-account-section .text {
+        max-width: unset;
+    }
+
+    form {
+        align-self: center;
+    }
 }
